@@ -8,9 +8,10 @@ Rename the program that is being run and replace it with this program.  This pro
 Example:
  - used video capture to catch a window popping up
  - observed pathname in window
- - > attrib -S -H pathname
- - > ren pathname pathname.bad
- - > xcopy WhoRanMe.exe pathname
- - > attrib +S +H pathname
- - > type %USERPROFILE%\ppidout.txt
+ - $ attrib -S -H pathname
+ - $ ren pathname pathname.bad
+ - $ xcopy WhoRanMe.exe pathname
+ - $ attrib +S +H pathname
+ - $ type %USERPROFILE%\ppidout.txt
  
+If the 'S' and 'H' attributes are not already set for pathname, both attrib commands should be ignored.
